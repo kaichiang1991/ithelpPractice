@@ -1,6 +1,8 @@
 import styled from "styled-components"
+import Author from "./Author"
 import Category from "./Category"
 import HashTag from "./HashTag"
+import author from '../../img/author/author.png'
 
 const StyledBlogContainer = styled.div `
   background-color: #fff;
@@ -18,6 +20,7 @@ const Blog = ({title}) => {
       <HashTag link='/2017' text='2017鐵人賽'/>
       <HashTag link='/aws' text='aws'/>
       <HashTag link='/vps' text='vps'/>
+      <Author cover={author} />
     </StyledBlogContainer>
   )
 }
