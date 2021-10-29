@@ -4,6 +4,7 @@ import './App.css'
 import Container from './components/common/Container'
 import DefaultLayout from './components/layout/DefaultLayout'
 import Blog from './components/blog/Blog'
+import { useState } from 'react'
 
 const StyledMainContainer = styled.div `
   background-color: #F2F2F2;
@@ -22,12 +23,15 @@ const StyledSideSection = styled.div `
 `
 
 const App = () => {
+
+  const [title] = useState('把你的親生兒子公諸於世：VPS')
+
   return (
     <DefaultLayout>
       <StyledMainContainer>
         <StyledContentContainer>
           <StyledBlogSection>
-            <Blog />
+            <Blog title={title}/>
           </StyledBlogSection>
           <StyledSideSection>
             Side

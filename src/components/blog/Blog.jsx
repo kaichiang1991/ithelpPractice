@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import Category from "./Category"
+import HashTag from "./HashTag"
 
 const StyledBlogContainer = styled.div `
   background-color: #fff;
@@ -9,11 +10,14 @@ const StyledBlogContainer = styled.div `
   padding: 40px 40px 60px 60px;
 `
 
-const Blog = () => {
+const Blog = ({title}) => {
   return (
     <StyledBlogContainer>
       <Category />
-      Blog
+      <h1>{title}</h1>
+      <HashTag link='/2017' text='2017鐵人賽'/>
+      <HashTag link='/aws' text='aws'/>
+      <HashTag link='/vps' text='vps'/>
     </StyledBlogContainer>
   )
 }
