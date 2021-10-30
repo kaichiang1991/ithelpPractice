@@ -54,9 +54,9 @@ const StyledLinkContainer = styled.span `
 
 // 連結文字
 // props: {link, text}
-const LinkText = ({link, text}) => {
+const LinkText = ({link, text, active}) => {
   return (
-    <StyledLinkContainer>
+    <StyledLinkContainer className={active? 'active': ''}>
       <Link to={link} >{text}</Link>
     </StyledLinkContainer>
   )
@@ -76,7 +76,7 @@ const Header = () => {
       <BlueLogoBar>
         <StyledNavigatorContainer>
           <LinkText link='/a' text='技術問答' />
-          <LinkText link='/a' text='技術文章' />
+          <LinkText link='/a' active text='技術文章' />
           <LinkText link='/a' text='iT徵才' />
           <LinkText link='/a' text='Tag' />
           <LinkText link='/a' text='聊天室' />
