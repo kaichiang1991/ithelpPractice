@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import './App.css'
 import Container from './components/common/Container'
 import DefaultLayout from './components/layout/DefaultLayout'
+import Share from './components/share/Share'
 import Blog from './components/blog/Blog'
 import { useState } from 'react'
 import About from './components/about/About'
@@ -33,6 +34,8 @@ const App = () => {
       <StyledMainContainer>
         <StyledContentContainer>
           <StyledBlogSection>
+            {/* 分享文章 */}
+            <Share />
             {/* Blog 本文 */}
             <Blog title={title}/>
             {/* 相關系列文 */}
