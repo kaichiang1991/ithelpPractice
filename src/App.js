@@ -6,6 +6,7 @@ import DefaultLayout from './components/layout/DefaultLayout'
 import Blog from './components/blog/Blog'
 import { useState } from 'react'
 import About from './components/about/About'
+import Comment from './components/comment/Comment'
 
 const StyledMainContainer = styled.div `
   background-color: #F2F2F2;
@@ -36,6 +37,8 @@ const App = () => {
             <Blog title={title}/>
             {/* 相關系列文 */}
             <About />
+            {/* 評論 */}
+            <Comment />
           </StyledBlogSection>
           <StyledSideSection>
             Side

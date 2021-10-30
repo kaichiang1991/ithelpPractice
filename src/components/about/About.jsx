@@ -10,6 +10,7 @@ const StyledAboutContainer = styled.div `
   display: flex;
   flex-direction: column;
   padding: 12px 40px;
+  margin-bottom: 40px;
 `
 
 const About = () => {
