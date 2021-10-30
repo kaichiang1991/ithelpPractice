@@ -4,6 +4,9 @@ import styled from "styled-components"
 
 const StyledPageSwitch = styled.div `
   display: flex;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #A3ACB3;
 `
 
 const StyledPageSelectContainer = styled.div `
