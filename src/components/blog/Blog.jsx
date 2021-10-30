@@ -5,8 +5,10 @@ import HashTag from "./HashTag"
 import author from '../../img/author/author.png'
 import { FlagFilled, HeartOutlined, MessageFilled } from '@ant-design/icons'
 import { useState } from "react"
+import AddToFavorite from "./AddToFavorite"
 
 const StyledBlogContainer = styled.div `
+  position: relative;
   background-color: #fff;
   border: 1px solid #E5E5E5;
   
@@ -75,6 +77,8 @@ const StyledBottomRightContainer = styled.div `
 const Blog = ({title}) => {
   return (
     <StyledBlogContainer>
+      {/* 加到最愛 */}
+      <AddToFavorite />
       <Category />
       <h1>{title}</h1>
       <HashTag link='/2017' text='2017鐵人賽'/>
