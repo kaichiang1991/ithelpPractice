@@ -9,6 +9,7 @@ import { useState } from 'react'
 import About from './components/about/About'
 import Comment from './components/comment/Comment'
 import Contest from './components/side/Contest'
+import Article from './components/side/Article'
 
 const StyledMainContainer = styled.div `
   background-color: #F2F2F2;
@@ -48,6 +49,18 @@ const App = () => {
           </StyledBlogSection>
           <StyledSideSection>
             <Contest />
+            <Article title='鐵人賽最新文章' list={[
+              'Leetcode: 226. Invert Binary Tree',
+              'Day 44. 之後..',
+              '更新網格交易機器人',
+              '如果你把上一個五年過爛了，就不要對不起下一個五年'
+            ]} gotoLink='/contest' goto='前往鐵人賽' />
+            <Article title='技術推廣專區' list={[
+              '[Day2] 抓取每日收盤價',
+              '利用python取得永豐銀行API的Nonce',
+              '[Day1] 基本工具安裝',
+              '永豐金融API測試員'
+            ]} gotoLink='/tech' goto='前往鐵人賽' />
           </StyledSideSection>
         </StyledContentContainer>
       </StyledMainContainer>
