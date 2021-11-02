@@ -8,6 +8,7 @@ import Blog from './components/blog/Blog'
 import { useState } from 'react'
 import About from './components/about/About'
 import Comment from './components/comment/Comment'
+import Contest from './components/side/Contest'
 
 const StyledMainContainer = styled.div `
   background-color: #F2F2F2;
@@ -19,10 +20,12 @@ const StyledContentContainer = styled(Container) `
 
 const StyledBlogSection = styled.div `
   width: 66.667%;
+  padding-right: 20px;
 `
 
 const StyledSideSection = styled.div `
   width: 33.333%;
+  padding-left: 20px;
 `
 
 const App = () => {
@@ -44,7 +47,7 @@ const App = () => {
             <Comment />
           </StyledBlogSection>
           <StyledSideSection>
-            Side
+            <Contest />
           </StyledSideSection>
         </StyledContentContainer>
       </StyledMainContainer>
