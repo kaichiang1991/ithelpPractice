@@ -5,7 +5,8 @@ const StyledHashTagContainer = styled.div `
   display: inline-block;
   padding: 2px 4px;
   margin-right: 8px;
-
+  margin-bottom: 12px;
+  border-radius: 4px;
   background-color: #E8F0F2;
 
   a{

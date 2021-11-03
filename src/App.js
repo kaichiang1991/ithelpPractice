@@ -11,6 +11,7 @@ import Comment from './components/comment/Comment'
 import Contest from './components/side/Contest'
 import Article from './components/side/Article'
 import Block from './components/side/Block'
+import TagList from './components/side/TagList'
 
 const StyledMainContainer = styled.div `
   background-color: #F2F2F2;
@@ -69,6 +70,15 @@ const App = () => {
               'html 本機圖片無法顯示'
             ]}/>
             <Block title='站方公告' list={['2021 iThome 鐵人賽精彩文章超過2萬篇，預計12月揭曉本屆獲勝鐵人']} />
+            <TagList title='熱門tag' tags={[
+              '13th鐵人賽',
+              '12th鐵人賽',
+              '11th鐵人賽',
+              '鐵人賽',
+              '2019鐵人賽',
+              '2018鐵人賽',
+              '2017鐵人賽',
+            ]} />
             <Block title='熱門回答' list={[
               'html 本機圖片無法顯示',
               '請問能安裝 SQL Server 2016 Enterprise先商用，等微軟通知後在付款?',
