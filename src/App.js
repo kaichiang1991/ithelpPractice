@@ -10,6 +10,7 @@ import About from './components/about/About'
 import Comment from './components/comment/Comment'
 import Contest from './components/side/Contest'
 import Article from './components/side/Article'
+import Block from './components/side/Block'
 
 const StyledMainContainer = styled.div `
   background-color: #F2F2F2;
@@ -61,6 +62,25 @@ const App = () => {
               '[Day1] 基本工具安裝',
               '永豐金融API測試員'
             ]} gotoLink='/tech' goto='前往鐵人賽' />
+            <Block title='熱門問題' list={[
+              '可以幫我解讀一下這些code嗎？',
+              'Python 列出所有1～1000中不被2也不被3整除的所有數字，即不是2的倍數也不是3的倍數',
+              '可以幫我解讀一下這些code嗎',
+              'html 本機圖片無法顯示'
+            ]}/>
+            <Block title='站方公告' list={['2021 iThome 鐵人賽精彩文章超過2萬篇，預計12月揭曉本屆獲勝鐵人']} />
+            <Block title='熱門回答' list={[
+              'html 本機圖片無法顯示',
+              '請問能安裝 SQL Server 2016 Enterprise先商用，等微軟通知後在付款?',
+              '請問VMware 排程 備份有麼經驗',
+              'c# asp.mvc 透過foreach在表格中重複放選單取值的問題'
+            ]} />
+            <Block title='熱門文章' list={[
+              '如果你把上一個五年過爛了，就不要對不起下一個五年',
+              '盤點清查與檢測掃描 - 安全性檢測之弱點掃描',
+              'JavaScript 從 100% 繼續，再多程式語言也不是問題！',
+              'JS 44 - 輸入網址就能使用的 RSS 閱讀器'
+            ]} />
           </StyledSideSection>
         </StyledContentContainer>
       </StyledMainContainer>
