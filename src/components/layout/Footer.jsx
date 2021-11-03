@@ -10,11 +10,12 @@ const StyledContentContainer = styled.div `
   color: #fff;
   padding: 48px 100px 32px;
   font-size: 16px;
+  text-align: center;
 `
 
 // 連結的容器
 const StyledLinkContainer = styled.span `
-  margin-right: 28px;
+  margin-right: 16px;
 
   a{
     color: #fff;

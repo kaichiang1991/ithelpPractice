@@ -10,10 +10,12 @@ const StyledAppHeader = styled.header `
 `
 
 // 白色 logo 的容器
-const WhiteLogoBar = styled(Container) `
+const WhiteLogoBar = styled.div `
   display: ${props => props.show? 'block': 'none'};
   padding: 40px 0 16px;
+`
 
+const WhiteLogoContainer = styled(Container)`
   img{
     height: 48px;
   }
@@ -22,10 +24,12 @@ const WhiteLogoBar = styled(Container) `
 // 藍色 logo 的容器
 const BlueLogoBar = styled.div `
   background-color: #00A0EA;
+  padding: 0;
+`
+
+const BlueLogoContainer = styled(Container) `
   display: flex;
   justify-content: space-between;
-
-  padding: 0 60px;
 `
 
 // 左側導覽的容器
@@ -71,22 +75,26 @@ const Header = () => {
   return (
     <StyledAppHeader>
       <WhiteLogoBar show>
-        <img src={whiteLogo} alt="" />
+        <WhiteLogoContainer>
+          <img src={whiteLogo} alt="" />
+        </WhiteLogoContainer>
       </WhiteLogoBar>
       <BlueLogoBar>
-        <StyledNavigatorContainer>
-          <LinkText link='/a' text='技術問答' />
-          <LinkText link='/a' active text='技術文章' />
-          <LinkText link='/a' text='iT徵才' />
-          <LinkText link='/a' text='Tag' />
-          <LinkText link='/a' text='聊天室' />
-          <LinkText link='/a' text='鐵人賽' />
-          <LinkText link='/a' text='鐵人館' />
-        </StyledNavigatorContainer>
-        <StyledSideContainer>
-          <SearchOutlined style={{color: '#fff', fontSize: 20, marginRight: 4}}/>
-          <LinkText link='/login' text='登入/註冊' />
-        </StyledSideContainer>
+        <BlueLogoContainer>
+          <StyledNavigatorContainer>
+            <LinkText link='/a' text='技術問答' />
+            <LinkText link='/a' active text='技術文章' />
+            <LinkText link='/a' text='iT徵才' />
+            <LinkText link='/a' text='Tag' />
+            <LinkText link='/a' text='聊天室' />
+            <LinkText link='/a' text='鐵人賽' />
+            <LinkText link='/a' text='鐵人館' />
+          </StyledNavigatorContainer>
+          <StyledSideContainer>
+            <SearchOutlined style={{color: '#fff', fontSize: 20, marginRight: 4}}/>
+            <LinkText link='/login' text='登入/註冊' />
+          </StyledSideContainer>
+        </BlueLogoContainer>
       </BlueLogoBar> 
     </StyledAppHeader>
   )

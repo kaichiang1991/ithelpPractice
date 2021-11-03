@@ -19,6 +19,7 @@ const StyledMainContainer = styled.div `
 
 const StyledContentContainer = styled(Container) `
   display: flex;
+  width: 80%;
 `
 
 const StyledBlogSection = styled.div `
